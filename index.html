@@ -3,10 +3,35 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="refresh" content="0; url=https://zalo.me/0332708028" />
-    <title>Chuyển hướng đến Zalo</title>
+    <title>Redirect</title>
+    <style>
+        body {
+            font-size: 20px; 
+            font-family: Arial, sans-serif; 
+            text-align: center; 
+            margin-top: 50px; 
+        }
+        #redirect-button {
+            font-size: 24px;
+            padding: 10px 20px;
+            background-color: #007BFF;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        #redirect-button:hover {
+            background-color: #0056b3;
+        }
+    </style>
 </head>
 <body>
-    <p>Nếu bạn không được tự động chuyển hướng, vui lòng <a href="https://zalo.me/0332708028">nhấn vào đây</a>.</p>
+    <p>Click vào nút bên dưới để tiếp tục:</p>
+    <button id="redirect-button">Tiếp tục</button>
+    <script>
+        document.getElementById('redirect-button').addEventListener('click', function() {
+            window.location.href = "https://bit.ly/3W8qcvq";
+        });
+    </script>
 </body>
 </html>
